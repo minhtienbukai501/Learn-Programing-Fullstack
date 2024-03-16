@@ -1,0 +1,46 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box .heading{
+    color:red;
+}
+
+.heading1{
+  
+    font-size: 15px;
+}
+
+.heading2{
+  
+    font-size: 17px;
+}
+
+.heading3{
+   
+    font-size: 20px;
+}
+
+.redcolor{
+    color:red;
+}
+
+.box > .title{
+    color: red;
+}
+
+.title + .title{
+    color: green;
+}
+
+:root{
+    --text-color:red;
+    --size-h1:15px;
+}
+h1{
+    color:var(--text-color);
+    font-size: var(--size-h1);
+}

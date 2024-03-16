@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        Tối ưu sử dụng ảnh trên trang wed;
+        1. Sủ dụng định dạng ảnh phù hợp?
+            - Hình học, vector, v.v : SVG;
+            - Bitmap transparent: PNG, WEBG;
+            -Bitmap không transparent: JPEG, WEPG
+        2. Nén hình ảnh (Giảm dung lượng)
+            - https://tinypng.com
+        3 Sử dụng kích thước ảnh phug hợp
+            - Original: 4000px x 4000px, figma: 800px X 800px(css)
+            resize: 1600px x 1600px(2x)
+            -PPI(Pixel Per inch), DPI(Dots per inch): 100DPI, 300DPI;
+    
+        -->
+</head>
+<body>
+    <!-- Dùng cho các thiết bị khác nhau -->
+    <!-- <img  srcset="./avatar-100x100.jpg 100w, 
+    ./avatar-200x200.jpg 200w, 
+    ./avatar-400x400.jpg 400w"
+    sizes="(max-width: 575px) 90px, 800px, (max-width:991px) 200px, 400px"
+    src="./avatar-400x400.jpg"
+    alt="Elva dressed as a fairy" 
+    > -->
+
+    <!-- Sử Dụng cho destop -->
+    <!-- <img srcset="./avatar-200x200.jpg 1x, ./avatar-400x400.jpg 2x"
+     src="./avatar-400x400.jpg" 
+     alt=""> -->
+
+
+     <!-- Bài Toán 3: Sử dụng ccho art direction
+
+
+     -->
+
+     <picture>
+        <source media="(max-width: 799px)" srcset="./slap.jpg" />
+        <source media="(min-width: 800px)" srcset="./slap.jpg" />
+        <img src="./slap.jpg" alt="Chris standing up holding his daughter Elva" />
+    </picture>
+
+</body>
+</html>

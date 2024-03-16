@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pc, .mobile, .tablet{
+            font-size: 68px;
+            display: none;
+        }
+
+
+        @media(min-width:1024px){
+            .pc{
+                display: block;
+            }
+        }
+
+        @media((min-width:740px) and (max-width:1023px)){
+            .tablet{
+                display: block;
+            }
+        }
+
+        @media(max-width:739px){
+            .mobile{
+                display: block;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="pc"><h1>Hello</h1></div>
+    <div class="mobile"><h1>Can you hear me</h1></div>
+    <div class="tablet"><h1>Tablet</h1></div>
+</body>
+</html>

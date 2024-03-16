@@ -1,0 +1,23 @@
+Những Thành phàn thường gặp trên wedsite
+1.header(Đầu trang)
+2.Điều hướng(navigation)
+3.Breadcrumb
+4.sidebar
+5.silder
+6.Nội dung(content)
+7.footer(Chân trang)
+
+---------- PHÂN TÍCH DỰ ÁN--------
+links = https://www.w3schools.com/w3css/tryw3css_templates_band.htm#
+
+Các thành phần
+1.header
+2.silder
+3.content
+    -   About 
+    -   tour
+    -   tour date
+    -   contact
+    -   image
+    -   footer
+4.footer
